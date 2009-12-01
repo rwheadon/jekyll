@@ -51,6 +51,10 @@ opts = OptionParser.new do |opts|
   opts.on("--permalink [TYPE]", "Use 'date' (default) for YYYY/MM/DD") do |style|
     options['permalink'] = style unless style.nil?
   end
+
+  opts.on("--opt_config [FILE_NAME]", "Specify an optional .yml config to use rather than _config.yml") do |opt_config|
+    options['opt_config'] = opt_config unless opt_config.nil?
+  end
   
   opts.on("--paginate [POSTS_PER_PAGE]", "Paginate a blog's posts") do |per_page|
     begin

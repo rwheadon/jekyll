@@ -2,14 +2,17 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jekyll}
-  s.version = "0.5.4"
+  s.version = "0.5.6"
+  
+
+
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Tom Preston-Werner"]
-  s.date = %q{2009-08-24}
+	s.authors = ["Tom Preston-Werner/Rich Wheadon"]
+	s.date = %q{2009-12-01}
   s.default_executable = %q{jekyll}
-  s.description = %q{Jekyll is a simple, blog aware, static site generator.}
-  s.email = %q{tom@mojombo.com}
+	s.description = %q{Jekyll is a simple, blog aware, static site generator. This patch allows command line switch for configuration file for site specific settings (i.e. local dev vs production domain).}
+	s.email = %q{rich.wheadon@gmail.com}
   s.executables = ["jekyll"]
   s.extra_rdoc_files = [
     "README.textile"
